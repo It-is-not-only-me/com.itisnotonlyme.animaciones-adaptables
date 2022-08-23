@@ -1,14 +1,11 @@
 {
-    "name": "com.itisnotonlyme.nombre.Tests",
+    "name": "Demo-animaciones-adaptables",
     "rootNamespace": "",
     "references": [
-        "GUID:0acc523941302664db1f4e527237feb3",
-        "GUID:27619889b8ba8c24980f49ee34dbb44a",
-        "GUID:1ce5d872e3143e14cad6fe7a65c83b68"
+        "GUID:183de4a9643f87a49aa394dec6ab8604",
+        "GUID:4b44e924cdbc1ea428fd9fc24e541c53"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

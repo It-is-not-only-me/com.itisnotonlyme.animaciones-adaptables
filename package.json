@@ -1,12 +1,13 @@
 {
-    "name": "com.itisnotonlyme.nombre",
-    "version": "1.0.0",
-    "displayName": "Nombre Lindo",
-    "description": "Descripcion linda",
+    "name": "com.itisnotonlyme.animaciones-adaptables",
+    "version": "0.1.0",
+    "displayName": "Animaciones adaptables",
+    "description": "Este sistema ayuda a manejar diferentes formas de animar dado diferentes sistemas influenciandolos, como animaciones tradicionales y con inverse kinematics",
     "unity": "2020.3",
     "keywords": [
-      "Key", 
-      "Words"
+      "Animacion",
+      "Adaptables", 
+      "Manejar"
     ],
     "author": {
       "name": "Juan Ignacio Biancuzzo",
