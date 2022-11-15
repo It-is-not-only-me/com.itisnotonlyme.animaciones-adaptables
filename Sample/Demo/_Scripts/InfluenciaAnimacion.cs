@@ -2,11 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using ItIsNotOnlyMe.AnimacionesAdaptables;
+using System;
 
 public class InfluenciaAnimacion : MonoBehaviour, IInfluencia<Transformacion>
 {
     [SerializeField] private Transformacion _transformacion;
-    [SerializeField] private float _influencia;
+    [SerializeField][Range(0,1)] private float _influencia;
 
-    public Transformacion EstadoActual() => Transformacion.Escalar(_transformacion, _influencia);
+    private IInfluencia<Transformacion>.Estado _estado;
+
+    IInfluencia<Transformacion>.Estado IInfluencia<Transformacion>.EstadoActual()
+    {
+        ActualizarEstado();
+        return _estado;
+    }
+
+    private void ActualizarEstado()
+    {
+        _estado.EstadoActual = _transformacion;
+        _estado.Influencia = _influencia;
+    }
 }

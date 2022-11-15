@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -215,7 +215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109199254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3.38}
+  m_LocalPosition: {x: 0, y: 0, z: -3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -248,8 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformacion:
     Posicion: {x: 0, y: 0, z: 0}
-    Rotacion: {x: 0, y: 0, z: 0, w: 0}
-  _influencia: 1
+  _influencia: 0
 --- !u!1 &486292450
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,6 +263,7 @@ GameObject:
   - component: {fileID: 486292455}
   - component: {fileID: 486292456}
   - component: {fileID: 486292457}
+  - component: {fileID: 486292458}
   m_Layer: 0
   m_Name: Punto medio
   m_TagString: Untagged
@@ -376,8 +376,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformacion:
     Posicion: {x: 0, y: 0, z: 0}
-    Rotacion: {x: 0, y: 0, z: 0, w: 0}
-  _influencia: 1
+  _influencia: 0.75
+--- !u!114 &486292458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486292450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e5c220cf88deb4886dc8342a86b5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transformacion:
+    Posicion: {x: 3.5, y: 0, z: 0}
+  _influencia: 0.25
 --- !u!1 &831183568
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,8 +601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformacion:
     Posicion: {x: 0, y: 0, z: 0}
-    Rotacion: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  _influencia: 1
+  _influencia: 0
 --- !u!114 &854785905
 MonoBehaviour:
   m_ObjectHideFlags: 0
